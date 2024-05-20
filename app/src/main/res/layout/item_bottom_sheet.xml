@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="65dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/bottom_sheet">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        app:rowCount="2"
+        app:columnCount="2">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/cardBackground">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/t_kecepatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kecepatan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/ic_kecepatan"
+                    android:layout_width="93dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/speed" />
+
+                <TextView
+                    android:id="@+id/kecepatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40 Km/H"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/cardBackground">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/t_daya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daya"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/ic_daya"
+                    android:layout_width="91dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/baterai" />
+
+                <TextView
+                    android:id="@+id/daya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="40 %"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/cardBackground">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/t_suhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suhu"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/ic_suhu"
+                    android:layout_width="81dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/suhu_rev" />
+
+                <TextView
+                    android:id="@+id/suhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="56 °C"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/cardBackground">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/t_jarak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jarak Tempuh"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/ic_jarak"
+                    android:layout_width="93dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/distance" />
+
+                <TextView
+                    android:id="@+id/jarak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40 Km"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
