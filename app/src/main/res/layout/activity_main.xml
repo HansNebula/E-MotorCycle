@@ -16,6 +16,7 @@
         <!--outline -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/outerCircle"
             android:layout_width="290dp"
             android:layout_height="290dp"
             android:layout_gravity="center"

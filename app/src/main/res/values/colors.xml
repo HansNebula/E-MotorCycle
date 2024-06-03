@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cardBackground">#F5F5F5</color>
     <color name="bottomSheetBackground">#37474F</color>
+    <color name="batt_green">#87F691</color>
+    <color name="batt_yellow">#f3f717</color>
+    <color name="batt_red">#cb0c00</color>
 </resources>
